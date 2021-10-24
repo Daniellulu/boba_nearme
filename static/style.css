@@ -1,0 +1,80 @@
+body {
+    background-color: ivory;
+}
+
+
+.app {
+    text-align: center;
+}
+
+.header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: #F38BA0;
+}
+
+.options {
+    display: flex;
+    /* justify-content: space-evenly; */
+    font-family: 'Nunito', sans-serif;
+    color: #548CA8;
+    font-size: 3vw;
+    overflow: auto;
+}
+
+#submitButton {
+    height: 40px;
+    margin: 3rem;
+    border-radius: 25px;
+    padding: 1px 20px 1px 20px;
+}
+
+#submitButton a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#is_closed {
+    margin: auto;
+    height: 25px;
+    width: 50px;
+}
+
+.distanceInput {
+    display: flex;
+    margin: auto;
+}
+
+.distanceInput p {
+    margin-right: 5px;
+    width: 100%;
+}
+
+.isOpenInput {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.header img {
+    margin-bottom: 2rem;
+}
+
+#distance {
+    margin: auto;
+    height: 20px;
+    max-width: 35px;
+}
+
+.limitInput {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+#limit {
+    margin: auto;
+    height: 20px;
+    max-width: 35px;
+}

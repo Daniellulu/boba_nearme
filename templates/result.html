@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../static/result.css" type="text/css" >
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,800;1,800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <title>Boba Finder!!! Results</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <img class="icon" src="../static/astro_boba_left.png" >
+        <h1 id="layerOne">Here are your results!</h1>
+        <img class="icon" src="../static/astro_boba_right.png" >
+        <!-- <img src='https://image.pngaaa.com/941/4183941-middle.png'> -->
+        <!-- <h1 id="layerTwo">Here are your results!</h1> -->
+        <!-- <h1 id="layerThree">Here are your results!</h1> -->
+      </div>
+
+      <div class="returnHome">
+        <button> <a href="/"> Return to Home Page </a></button>
+      </div>
+      
+
+      <div class="results">
+        <div class='businesses'>
+          {% for b in sorted_list_busi %}
+            <div class="oneBusiness"> 
+              <img class="image" src={{b['image']}} >
+
+              <div class="lineOne">
+                <p class="businessName"> {{b['name']}} </p>
+                <p class="businessRating">  Rating: {{b['rating']}} </p>
+              </div>
+              <!-- round(number, 2) -->
+              <p class="businessDistance"> {{b["distance"]}} miles</p>
+            </div>
+            <br>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="../static/result.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

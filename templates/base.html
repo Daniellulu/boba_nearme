@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../static/style.css" type="text/css" >
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,800;1,800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Boba Finder!!!</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <!-- <img src='https://image.pngaaa.com/941/4183941-middle.png'> -->
+        <h1>Boba Finder</h1>
+        <img class="icon" src="../static/astro_before.png" >
+      </div>
+
+      <div class="options">
+        <div class="distanceInput">
+          <p>Distance (in miles)</p>
+          <input type="number" min='0' placeholder="5" id='distance'>
+        </div>
+        <div class="isOpenInput">
+          <p>Show only opened shops</p>
+          <input type="checkbox" class="checkbox" id='is_closed'>
+        </div>
+        <div class="limitInput">
+          <p>Show amount of stores</p>
+          <input type="number" min='5' id='limit' placeholder='5'>
+        </div>
+      </div>
+      <!-- <p> hello! </p> -->
+      <!-- <button id="submitButton" onclick=submission()> Submit </button> -->
+      <button id="submitButton" onclick=submission()> <a href="result">Submit</a> </button>
+      <!-- <a href="result.html">Submit</a> -->
+    </div>
+  </body>
+
+  <script src="../static/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
