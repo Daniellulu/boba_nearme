@@ -71,7 +71,7 @@ def home_page():
         #print('home: GET')
         return render_template('base.html', boolean=True)
     elif request.method == 'POST':
-        print('home: POST')
+        #print('home: POST')
 
         data = request.get_json() # getting the coordinates and options from the website
         coords = (data['latitude'], data['longitude'])
