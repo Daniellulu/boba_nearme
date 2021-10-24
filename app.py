@@ -15,7 +15,7 @@ def create_app():
 app = create_app()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
     # BASE_API_URL = 'https://api.yelp.com/v3/businesses/search'
     # url_params = {'term': 'bubble tea', 'limit': 5, 'sort_by': 'rating', 'location': 'san francisco'}    # headers = {'Authorization': f"Bearer {API_KEY}"}
