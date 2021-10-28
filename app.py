@@ -16,10 +16,3 @@ app = create_app()
 
 if __name__ == '__main__':
     app.run()
-
-    # BASE_API_URL = 'https://api.yelp.com/v3/businesses/search'
-    # url_params = {'term': 'bubble tea', 'limit': 5, 'sort_by': 'rating', 'location': 'san francisco'}    # headers = {'Authorization': f"Bearer {API_KEY}"}
-
-    # response = requests.get(BASE_API_URL, params=url_params, headers=headers)
-    # print(response.status_code)
-    
